@@ -8,7 +8,15 @@
 <body>
     
     <?php
-        
+        const INCREMENT = 2;
+        $size = rand(1,10);
+        $num = rand(2,10);
+        $par_text = "Hello World";
+
+        for($i = 0; $i < $num; $i++) {
+            echo "<p style='font-size: ".$size."px'> $par_text </p>";
+            $size += 2;
+        }
 
 
     ?>
